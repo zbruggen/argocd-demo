@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello
-        image: zbruggen/argocd-demo:latest  # Replace with your Docker Hub username
+        image: zbruggen320/argocd-demo:latest  # Replace with your Docker Hub username
         ports:
         - containerPort: 80
