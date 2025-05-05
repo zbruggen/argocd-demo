@@ -29,4 +29,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: zbruggen/argocd-demo:latest  # Replace with your Docker Hub username
+        tags: zbruggen320/argocd-demo:latest  # Replace with your Docker Hub username
