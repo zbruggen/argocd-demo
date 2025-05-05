@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: zbruggen320/argocd-demo:sha-cc43218
+          image: zbruggen320/argocd-demo:sha-b038406
           ports:
             - containerPort: 80
