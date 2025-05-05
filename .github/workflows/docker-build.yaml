@@ -9,6 +9,9 @@ on:
       - index.html
       - .github/workflows/docker-build.yml
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
