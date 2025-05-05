@@ -2,18 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-world
+  labels:
+    app: hello-world
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello
+      app: hello-world
   template:
     metadata:
       labels:
-        app: hello
+        app: hello-world
     spec:
       containers:
-      - name: hello
-        image: zbruggen320/argocd-demo:latest  # Replace with your Docker Hub username
-        ports:
-        - containerPort: 80
+        - name: hello-world
+          image: zbruggen320/argocd-demo:sha-0000000
+          ports:
+            - containerPort: 80
